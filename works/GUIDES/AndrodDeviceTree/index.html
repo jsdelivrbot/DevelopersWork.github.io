@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="icon" href="https://goo.gl/47oCKc" type="image/png" />
+		<title>Build Android Device Tree</title>
+		<script charset="utf-8" type="text/javascript">
+					amzn_assoc_ad_type = "responsive_search_widget";
+					amzn_assoc_tracking_id = "develwork-21";
+					amzn_assoc_marketplace = "amazon";
+					amzn_assoc_region = "IN";
+					amzn_assoc_placement = "";
+					amzn_assoc_search_type = "search_widget";
+					amzn_assoc_width = 160;
+					amzn_assoc_height = 600;
+					amzn_assoc_default_search_category = "";
+					amzn_assoc_default_search_key = "";
+					amzn_assoc_theme = "dark";
+					amzn_assoc_bg_color = "000000";
+		</script>
+		<script type="text/javascript">
+			function showhide(id) {
+				var e = document.getElementById(id);
+				e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+			}
+		</script>
+	</head>
+	<body style="background-color:#900C3F;">
+		<div align="center">
+		<!-- Start of shorte.st banner code -->
+			<a href="http://join-shortest.com/ref/8011e399d9">
+				<img src="https://static.shorte.st/bundles/smeuser/img/referral_banners/350x19.png?2016-12-21.0" title="Share your links and earn real money" width="350" height="19" />
+			</a>
+		<!-- End of shorte.st banner code -->
+		</div>
+		<div style="color:Teal">
+			<strong>Hello Guys.....</strong>
+			<img src="index_files/emoji-7.png" alt="emoji" width="50" height="50" align=""/>
+			<img src="index_files/emoji-7.png" alt="emoji" width="50" height="50" align=""/>
+			<img src="index_files/emoji-7.png" alt="emoji" width="50" height="50" align=""/>
+		</div>
+		<div align="right">
+			<h1 align="center">This is "
+				<strong style="color:teal;">Developers@Work</strong> "....
+				<img src="index_files/emoji-6.png" alt="emoji" width="50" height="50" align=""/>
+			</h1>
+		</div>
+		<div align="center">
+			<strong align="center">Today I'm here to Explain You!!!</strong>
+		</div>
+		<h1 style="color:tEAL;" align="center">CODING ANDROID DEVICE TREE GUIDE FOR BEGINNERS</h1>
+		<div style="display:inline;">
+			<img src="index_files/tree.jpg" alt="Android Tree" width="1000" height="" align="center"/>
+			<div align="center" style="display:inline;">
+				<div>
+					<script>
+						!function(d,s,id){
+							var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+							if(!d.getElementById(id)){
+								js=d.createElement(s);
+								js.id=id;
+								js.src=p+"://platform.twitter.com/widgets.js";
+								fjs.parentNode.insertBefore(js,fjs);
+							}
+						}
+						(document,"script","twitter-wjs");
+					</script>
+				</div>
+				<script src="//z-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=IN"></script>
+			</div>
+		</div>
+		<div>Let's start with tools we need<br><br>
+			<strong style="color:MediumVioletRed;">Ubuntu-64bit OS</strong> with full android development tools installed.<br><br>More than 
+			<strong style="color:MediumVioletRed;">100-GB</strong> of Hard Disk Space.<br><br>
+			<strong style="color:MediumVioletRed;">Internet Connection</strong> for downloading some data.<br><br>
+			<strong style="color:MediumVioletRed;">Rooted Android Mobile</strong> to which you want to make a 
+			<strong style="color:MediumVioletRed;">Custom Rom</strong> .<br><br>
+			<strong style="color:MediumVioletRed;">Source code</strong> already downloaded of Rom which you are going to build.If you want more about Downloading Source code-Xda link 
+			<a href="http://forum.xda-developers.com/chef-central/android/guide-android-rom-development-t2814763">
+				<strong>Here</strong>
+			</a><br><br>Last but not least 
+			<strong style="color:MediumVioletRed;">Patience</strong>.<br><br>I'am making device tree of 
+			<strong style="color:DeepSkyBlue;">CyanogenMod 11</strong> for the device 
+			<strong style="color:DeepSkyBlue;">Celkon A401</strong><br><br>
+		</div>
+	<div>
+		<h1 style="color:DarkSlateGray;">Follow these Steps :</h1>
+		<div>
+			<h2 style="color:FireBrick;">1) Get your Stock - boot.img,recovery.img</h2>
+			<a href="javascript:showhide('1')">
+				<button>Click Here to Expand</button>
+			</a>
+			<div id="1" style="display:none;">
+				1)You can use adb pull command if you know your Device Partition Mount Points.Video Below explain Backup Partitions using Adb
+					<iframe src="index_files/mNiA9ws0gJM.htm" allowfullscreen="" width="1000" height="500" frameborder="0"></iframe><br>
+				2)Use apps from playstore to backup.I suggest Flashify app-Playstore link 
+					<a href="https://play.google.com/store/apps/details?id=com.cgollner.flashify&amp;hl=en">
+						<strong>Here</strong>
+					</a> .<br>
+				3)Extract these files from your stock firmware.Video Below explain Extract files for Spreadtrum firmware
+					<iframe src="index_files/gusbyq1e6BM.htm" allowfullscreen="" width="1000" height="500" frameborder="0"></iframe><br>Now Create stock folder in the Home and copy the files in it.
+					<img src="index_files/files.png" alt="Screenshot" width="1000" height="" align=""/>
+			</div>
+		</div>
+		<div>
+			<h2 style="color:FireBrick;">2) Get your Device Information</h2>
+			<a href="javascript:showhide('2')">
+				<button>Click Here to Expand</button>
+			</a>
+			<div id="2" style="display:none;">* Download any Root browser app and goto /system and copy build.prop to pc where we copied
+			other files.<img src="index_files/files2.png" alt="Screenshot" width="1000" height="" align=""><br><br><br>
+    Now open build.prop using your text editor.<img src="index_files/prop.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Check these <strong style="background-color:Black;color:Teal;">ro.product.brand=<br>ro.product.device=</strong><img src="index_files/info.png" alt="Screenshot" width="1000" height="" align="">
+			</div>
+		</div>
+		<div>
+			<h2 style="color:FireBrick;">3) Extract recovery.img using mkvendor.sh</h2>
+			<a href="javascript:showhide('3')"><button>Click Here to Expand</button></a>
+			<div id="3" style="display:none;">Open Terminal using <strong style="background-color:Black;color:Teal;">"Ctrl+Alt+T"</strong> keyboard keys<img src="index_files/terminal.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Here my repo folder is named as cm11<img src="index_files/repo.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Type in terminal <strong style="background-color:Black;color:Teal;">"cd (Your repo folder location)"</strong> and press Enter.<img src="index_files/dir.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Before starting remove old output product files type this in terminal <strong style="background-color:Black;color:Teal;">"make clean"</strong> and press Enter.<img src="index_files/clean.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Remove old output files type this in terminal <strong style="background-color:Black;color:Teal;">"make clobber"</strong> and press Enter.<img src="index_files/clobber.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Update your repo files so type this in terminal <strong style="background-color:Black;color:Teal;">"repo sync"</strong> and press Enter.<img src="index_files/reposync.png" alt="Screenshot" width="1000" height="" align=""><br><br> 
+    Now type <strong style="background-color:Black;color:Teal;">"./build/tools/device/mkvendor.sh (brand) (device) (recovery.img location)"</strong> in terminal and press Enter.<br>If you get this error <strong style="background-color:Black;color:Teal;">"unpackbootimg not found. Is your android build environment set up and have the host tools been built?"</strong>. Then follow the steps below
+    <img src="index_files/mkvendor.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Then type in terminal <strong style="background-color:Black;color:Teal;">". build/envsetup.sh"</strong> and press Enter.<br><img src="index_files/envsetup.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Next type <strong style="background-color:Black;color:Teal;">"make -j4 otatools"</strong> and press Enter.<br><img src="index_files/otatools.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Even then the problem have'nt resolved then next type this command <strong style="background-color:Black;color:Teal;">"cp $HOME/repo_folder/out/host/linux-x86/bin/unpackbootimg $HOME/bin"</strong> and press Enter.<br><img src="index_files/mkbootimg.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Now try this command to check unpackbootimg was detected <strong style="background-color:Black;color:Teal;">"which unpackbootimg"</strong> and press Enter.<br><img src="index_files/bootimg.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Now try this command again <strong style="background-color:Black;color:Teal;">"./build/tools/device/mkvendor.sh (brand) (device) (recovery.img location)"</strong> and press Enter.<br><img src="index_files/recovery.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+			</div>
+		</div>
+		<div>
+			<h2 style="color:FireBrick;">4) Check All Files Extracted correctly</h2>
+			<a href="javascript:showhide('4')"><button>Click Here to Expand</button></a>
+			<div id="4" style="display:none;">Let's check was all files set correct in <strong style="background-color:Black;color:Teal;">device/brand/codename</strong><img src="index_files/extract.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+			</div>
+		</div>
+   <h2 style="color:FireBrick;">5) Making Device Tree Recognised in setup</h2>
+   <a href="javascript:showhide('5')"><button>Click Here to Expand</button></a>
+   <div id="5" style="display:none;"><p style="">We need to create a new file <strong style="background-color:Black;color:Teal;">vendorsetup.sh</strong><img src="index_files/vendorsetup.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Edit it with a text editor <strong style="background-color:Black;color:Teal;">add_lunch_combo cm_codename-eng</strong> .This will add your device in lunch options, and will be initialized by <strong style="background-color:Black;color:Teal;">build/envsetup.sh</strong><img src="index_files/lunch.png" alt="Screenshot" width="1000" height="" align=""><br><br> </p></div>  
+   <hr><h2 style="color:FireBrick;">6) Editing Android.mk file</h2>
+   <a href="javascript:showhide('6')"><button>Click Here to Expand</button></a>
+   <div id="6" style="display:none;"><p style="">Next you have to change name of <strong style="background-color:Black;color:Teal;">AndroidBoard.mk to Android.mk</strong><img src="index_files/android.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Open Android.mk using text editor and edit is as <strong style="background-color:Black;color:Teal;">LOCAL_PATH := $(call my-dir)<br><br>ifeq ($(TARGET_DEVICE),codename)<br>include $(call all-makefiles-under,$(LOCAL_PATH))<br>endif</strong> <img src="index_files/androidedit.png" alt="Screenshot" width="1000" height="" align=""><br><br></p></div>
+   <hr><h2 style="color:FireBrick;">7) Create and Changing files location</h2>
+   <a href="javascript:showhide('7')"><button>Click Here to Expand</button></a>
+   <div id="7" style="display:none;"><p style="">Let's create two a folders <strong style="background-color:Black;color:Teal;">"prebuilt" and "recovery"</strong>and move the <strong style="background-color:Black;color:Teal;">kernel</strong> to prebuilt and then <strong style="background-color:Black;color:Teal;">recovery.fstab</strong> to recovery<img src="index_files/createfolder.png" alt="Screenshot" width="1000" height="" align=""><br><br></p></div>
+   <hr><h2 style="color:FireBrick;">8) Editing device_codename.mk file</h2>
+   <a href="javascript:showhide('8')"><button>Click Here to Expand</button></a>
+   <div id="8" style="display:none;"><p style="">Open <strong style="background-color:Black;color:Teal;">device_codename.mk </strong> .You can see the kernel is called from device folder, but you moved it in prebuilt folder so change this from <strong style="background-color:Black;color:Teal;">LOCAL_PATH := device/brand/codename</strong> to <strong style="background-color:Black;color:Teal;">LOCAL_PATH := device/brand/codename/prebuilt</strong><img src="index_files/prebuilt.png" alt="Screenshot" width="1000" height="" align=""><br><br></p></div>
+   <hr><h2 style="color:FireBrick;">9) Editing BoardConfig.mk file</h2>
+   <a href="javascript:showhide('9')"><button>Click Here to Expand</button></a>
+   <div id="9" style="display:none;"><p style="">Finally open <strong style="background-color:Black;color:Teal;">BoardConfig.mk</strong> file.<img src="index_files/board.png" alt="Screenshot" width="1000" height="" align=""><br><br> 
+    So we have to make some changes.If the mkvendor script didn't get your platform <strong style="background-color:Black;color:Teal;">TARGET_BOARD_PLATFORM := unknown</strong> .Open new terminal and connect your android in adb mode type this command  <strong style="background-color:Black;color:Teal;">adb shell cat /proc/cpuinfo</strong> you can see hardware block it is your platform <img src="index_files/platform.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Or you can also check this from <strong style="background-color:Black;color:Teal;">build.prop</strong> which had already backup up <img src="index_files/platform2.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    After platform correctly set now set <strong style="background-color:Black;color:Teal;">Partition Sizes</strong>.You can see they have'nt set <img src="index_files/partitions.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    In some devices <strong style="background-color:Black;color:Teal;">adb shell cat /proc/mtd</strong> may not work.If it works Ok you can try If it does'nt then connect your android in adb mode and type in terminal <strong style="background-color:Black;color:Teal;">adb remount<br>adb shell "su" "" "mount -o remount,rw /system"<br>adb push parted /system/bin/parted<br>adb shell<br>chmod 0755 /system/bin/parted<br>parted /dev/block/mmcblk0<br>print</strong> Finally you will get result of Partition Sizes.The file <strong style="background-color:Black;color:Teal;">parted</strong> can be found <a href="https://mega.nz/#%21RghWgbwb%21_zBLcurAg2DiejHKyw6fwTz564a3pO3UH1mhdIKClb0"><strong>Here</strong></a><img src="index_files/sizes.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Now we need these partitions <strong style="background-color:Black;color:Teal;">boot,cache,recovery,userdata,system</strong> in the terminal result they are in <strong style="background-color:Black;color:Teal;">Mega Bytes</strong> we need to multiply them with <strong style="background-color:Black;color:Teal;">1048576</strong> to convert into <strong style="background-color:Black;color:Teal;">Bytes</strong> <img src="index_files/partitionsize.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Finally change the  <strong style="background-color:Black;color:Teal;">TARGET_PREBUILT_KERNEL := device/brand/codename/kernel</strong> to <strong style="background-color:Black;color:Teal;">TARGET_PREBUILT_KERNEL := device/brand/codename/prebuilt/kernel</strong> and save the file<img src="index_files/prebuilt2.png" alt="Screenshot" width="1000" height="" align=""><br><br></p></div>
+   <hr><h2 style="color:FireBrick;">10) Start Building Recovery</h2>
+   <a href="javascript:showhide('10')"><button>Click Here to Expand</button></a>
+   <div id="10" style="display:none;"><p style="">Open a terminal and type this and initialize the building environment <strong style="background-color:Black;color:Teal;">. build/envsetup.sh</strong><img src="index_files/envsetup2.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    You can see that my device is included. Next lunch device configuration <strong style="background-color:Black;color:Teal;">lunch cm_codename-eng</strong><img src="index_files/lunch2.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+    Finally start making Recovery <strong style="background-color:Black;color:Teal;">make recoveryimage</strong><img src="index_files/recoveryimage.png" alt="Screenshot" width="1000" height="" align=""><br><br></p></div>
+   <hr><h2 style="color:FireBrick;">11) Some Missed Points and Tips</h2>
+   <a href="javascript:showhide('11')"><button>Click Here to Expand</button></a>
+   <div id="11" style="display:none;"><p style="">1)After completing making of recovery <strong style="background-color:Black;color:Teal;">Flash the recovery.img</strong> from out folder.If it <strong style="background-color:Black;color:Teal;">Boot Sucessfully</strong> then you are on right way or else check back every step in the Guide..........<br><br>
+ 
+    2)The process is'nt complete fully there will be errors in recovery 
+you need to edit the files in the tree and you also need <strong style="background-color:Black;color:Teal;">Vendor,Kernel</strong> to be build for making Rom so wait for my coming Guides.......<br><br>
+    3)I used term <strong style="background-color:Black;color:Teal;">brand</strong> but it also can be <strong style="background-color:Black;color:Teal;">manufacturer</strong> the other word <strong style="background-color:Black;color:Teal;">codename</strong> is the key word for <strong style="background-color:Black;color:Teal;">device</strong>.<br><br>
+    4)By following this guide you'll build a <strong style="background-color:Black;color:Teal;">ClockWorkMod Recovery_(CWM)</strong>.Because in Cyanogenmod default recovery is CWM....... If you want to change it the follow steps below....<br><br>
+   </p></div>
+   <hr><h2 style="color:FireBrick;">12) Change Recovery Variant</h2>
+   <a href="javascript:showhide('12')"><button>Click Here to Expand</button></a>
+   <div id="12" style="display:none;"><p>If you'd like to add a custom recovery then go to<strong style="background-color:Black;color:Teal;">~/repo folder/bootable</strong><img src="index_files/bootable.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+   You can see three folders in them naming starts with <strong style="background-color:Black;color:Teal;">recovery</strong> <img src="index_files/recoverys.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+   But a folder has been named only <strong style="background-color:Black;color:Teal;">recovery</strong> so rename it as <strong style="background-color:Black;color:Teal;">recovery-cwm</strong><img src="index_files/rename20recovery.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+   Now open <strong style="background-color:Black;color:Teal;">BoardConfig.mk</strong> using any text editor and add this line <strong style="background-color:Black;color:Teal;">RECOVERY_VARIANT := #</strong> in the place of # type the recovery key word.<img src="index_files/variant.png" alt="Screenshot" width="1000" height="" align=""><br><br>
+   That's it you are Ready for building a new recovery variant but before making recovery make clean and clobber ........  
+   </p></div>
+   <hr><hr>
+   <DIV align="center">
+		<iframe src="index_files/Uw_caMHZRC4.htm" allowfullscreen="" width="1000" height="600" frameborder="0"></iframe>
+	<!-- Start of shorte.st banner code -->
+		<a href="http://join-shortest.com/ref/8011e399d9"><img src="https://static.shorte.st/bundles/smeuser/img/referral_banners/728x90.png?2016-12-21.0" title="Shorte.st links, biggest payouts. Join now" width="728" height="90" /></a>
+	<!-- End of shorte.st banner code -->
+   <DIV>  
+
+</body></html>

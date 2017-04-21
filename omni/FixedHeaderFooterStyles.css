@@ -1,0 +1,43 @@
+
+#navbar-default{
+	font-family: 'Righteous', cursive;
+	font-size:25px;
+	color:black;
+	background-color:#022b3a;
+	margin:0px;
+	border:0px;
+	border-bottom:5px solid teal;
+	padding:0px;
+	display:inline;
+}
+
+#navbar-brand{
+	font-size:35px;
+	color:#ccc !important;
+	font-weight:bold;
+	margin:0px;
+	border:0px;
+	float:none;
+}
+
+#active{
+	
+	
+}
+
+#navbar-header {
+	position:absolute;
+	padding:0px 0px 0px 0px;
+	margin:-20px 0px 0px 425px;
+    text-align: center;
+    width: 100%;
+}
+
+#navbar-brand img{
+	width:35%;
+	height:35%;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	padding:0px;
+
+}
