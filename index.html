@@ -1,106 +1,128 @@
 <html>
 	<head>
 	    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+		
 		<meta name="google-site-verification" content="qaJGD11lXBFx-G_iNkaZche1a2sMGvJIRPWA6nbl4iE" />
+		
         <meta name="description" content="Developers@Work Page">
+		
 		<link rel="icon" href="https://goo.gl/47oCKc" type="image/png" />
 		
 		<title id="title">Home - Developers@Work</title>
+		
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         
         <!-- Font Links -->
 		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"/>
 		<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"/>
 		
-	<!-- Latest compiled and minified CSS -->
+		<!-- BootStrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="omni/style.css">
-		<script type="text/javascript"src="omni/script.js"></script>
-		<link rel="stylesheet" href="omni/FixedHeaderFooterStyles.css">
-	<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script type="text/javascript"src="script.js"></script>
+		
+		<!-- Global Includes -->
+		<link rel="stylesheet" href="globalIncludes/style.css">
+		<script type="text/javascript"src="globalIncludes/script.js"></script>
+		<link rel="stylesheet" href="globalIncludes/FixedHeaderFooterStyles.css">
+		
+		<!--  Source Files GitHub -->
 		<script type="text/javascript"src="https://rawgit.com/DevelopersWork/DevelopersWork.github.io/YouTube-Projects/javaScript/SubscribersCount/countScript.js"></script>
 		<script type="text/javascript"src="https://rawgit.com/DevelopersWork/DevelopersWork.github.io/YouTube-Projects/javaScript/Autho.js"></script>
+		
+		<!-- Local Includes -->
+		<script type="text/javascript"src="script.js"></script>
 		<link rel="stylesheet" href="style.css">
+		
 	</head>
 	
-	<body style="background-image:url('https://i.stack.imgur.com/IehB7.png');">
+	<body style="background-image:url('https://i.stack.imgur.com/IehB7.png');" align="center">
+	
 		<div id="loader">
+		
 			<style>
-				#loader {
-					position: fixed;
-					left: 0px;
-					top: 0px;
-					width: 100%;
-					height: 100%;
-					z-index: 99;
-					background: url('omni/loader.gif') 50% 50% no-repeat rgb(249,249,249);
-				}
+				#loader{
+					position:fixed;
+					left:0px;
+					top:0px;
+					width:100%;
+					height:100%;
+					z-index:99;
+					background:url('globalIncludes/loader.gif') 50% 50% no-repeat rgb(249,249,249);}
 			</style>
-			<script>
-				setTimeout(function(){
-					$("#loader").fadeOut("slow");
-				},5000);
-			</script>
+			
 		</div>
-
-		<nav class="navbar navbar-default navbar-fixed-top" id="navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header"  role="navigation">
-       <a class="navbar-brand" id="navbar-brand" href="#Developers@Work">
-        <img src="omni/DevelopersWork.png" alt="Developers@Work">
-      </a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	<ul class="nav navbar-nav navbar-left">
-		<li class="active" id="active"><a href="?page=home">HOME</a></li>
-        <li><a href="#">CONTACT</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">STUFF<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-		<li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SHOP<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-		<li><a href="#">SUPPORT</a></li>
-        <li><a href="#">ABOUT</a></li>
-        
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
 		
+		<div id="navigationBar">
 		
+			<nav class="navbar navbar-default navbar-fixed-top navbar-static-top" id="navbar-default">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			
+				<div class="navbar-header" id="navbar-header">
+					<a class="navbar-brand" id="navbar-brand" href="#Developers@Work"r>
+						<img src="globalIncludes/DevelopersWork.png" alt="Developers@Work">
+					</a>
+				</div>
+				
+				<div class="container-fluid">
+				<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					
+						<ul class="nav navbar-nav navbar-left">
+							<li class="active" id="active"><a href="?page=home">HOME</a></li>
+							<li><a href="contact">CONTACT</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WORKS<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="works/liveSubscriberCount">Live Subscriber Count</a></li>
+							<!--	<li><a href="works/">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Separated link</a></li>     -->
+								</ul>
+							</li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SHOPS<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="http://shop.spreadshirt.com/DevelopersWork" target="_blank">HOODIES@SPREADSHIRT</a></li>
+							<!--	<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Separated link</a></li>		-->
+								</ul>
+							</li>
+							<li><a href="support">SUPPORT</a></li>
+							<li><a href="about">ABOUT</a></li>
+						</ul>
+						
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+				
+			</nav>
+		</div><br><br><br><br>
+		
+		<div id="halfPageAd" align="center" style="float:right;">
+			<a href="http://api.hostinger.in/redir/17850336" target="_blank"><img src="http://www.hostinger.in/banners/en/hostinger-160x600-1.gif" alt="Free Hosting" border="0" width="160" height="600" /></a>
+		</div>
+		
+		<div id="barAd" align="center" style="float:none;">
+			<a href="http://api.hostinger.in/redir/17850336" target="_blank" ><img src="http://www.hostinger.in/banners/en/hostinger-728x90-1.gif" alt="Free Hosting" border="0" width="728" height="90" /></a>
+		</div>
+    
 		<div id="RealTimeSubscribersCount"></div>
-
-		<div align="center">
-		<a href="http://api.hostinger.in/redir/17850336" target="_blank" ><img src="http://www.hostinger.in/banners/en/hostinger-728x90-1.gif" alt="Free Hosting" border="0" width="728" height="90" /></a>
-</div>
-		<br/><br><br/><div id="bottomStuff" class="" align="center">
-			YouTube/Developers@Work<br>
-			Facebook/DevelopersWork<br>			
-			Twitter/DevelopersWorkY<br> 
-			Instagram/DevelopersWork<br>
+		
+		<div id="mediumRectangleAd" align="center" style="float:left;">
+			<a href="http://api.hostinger.in/redir/17850336" target="_blank"><img src="http://www.hostinger.in/banners/en/hostinger-300x250-2.gif" alt="Free Hosting" border="0" width="300" height="250" /></a>
 		</div>
+		
+		<div id="billBoardAd" align="center" style="float:none;">
+			<a href="http://api.hostinger.in/redir/17850336" target="_blank"><img src="http://www.hostinger.in/banners/en/hostinger-600x400-2.gif" alt="Free Hosting" border="0" width="600" height="400" /></a>
+		</div>
+		
+		
 	</body>
+	
 </html>
