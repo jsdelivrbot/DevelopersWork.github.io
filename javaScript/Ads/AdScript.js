@@ -56,7 +56,6 @@ function RandomiseAds(x=0){
 	billBoardAd = [
 		'<a href="http://api.hostinger.in/redir/17850336" target="_blank"><img src="http://www.hostinger.in/banners/en/hostinger-600x400-1.gif" alt="Free Hosting" border="0" width="600" height="400" /></a>'
 		,'<a href="http://api.hostinger.in/redir/17850336" target="_blank"><img src="http://www.hostinger.in/banners/en/hostinger-600x400-2.gif" alt="Free Hosting" border="0" width="600" height="400" /></a>'
-		,'<a target="_blank" href="https://www.amazon.in/gp/search?ie=UTF8&tag=developerswork-21&linkCode=ur2&linkId=1ac5ba186c57750eceb748096e091982&camp=3638&creative=24630&index=apparel&keywords=Shoes">Shoes Apparel</a><img src="//ir-in.amazon-adsystem.com/e/ir?t=developerswork-21&l=ur2&o=31" width="970" height="250" border="0" alt="" style="border:none !important; margin:0px !important;" />'
 		];
 	
 	var fullBanner = fullBannerAd[Math.floor(Math.random()*fullBannerAd.length)],
