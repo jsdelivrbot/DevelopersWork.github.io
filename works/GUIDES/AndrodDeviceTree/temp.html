@@ -1,18 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-		
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		
-		<noscript><a rel="nofollow" href="http://ws-in.amazon-adsystem.com/widgets/q?rt=tf_mfw&ServiceVersion=20070822&MarketPlace=IN&ID=V20070822%2FIN%2Fdevelwork-21%2F8001%2F69019311-2acc-46e5-ac4b-271b8015a2ba&Operation=NoScript"></a></noscript>
-		
-		<meta name="google-site-verification" content="qaJGD11lXBFx-G_iNkaZche1a2sMGvJIRPWA6nbl4iE" />
-		
-        <meta name="description" content="Developers@Work Page">
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		
 		<link rel="icon" href="https://goo.gl/47oCKc" type="image/png" />
 		
-		<title id="title">[GUIDE]Build Android Device Tree - Developers@Work</title>
+		<title>Build Android Device Tree</title>
 		
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -27,7 +21,7 @@
 		
 		<!-- Global Includes -->
 		<link rel="stylesheet" href="../../../globalIncludes/style.css">
-		<script type="text/javascript"src="../../../globalIncludes/script.js"></script>
+		<script type="text/javascript" src="../../../globalIncludes/script.js"></script>
 		<link rel="stylesheet" href="../../../globalIncludes/FixedHeaderFooterStyles.css">
 		
 		<!--  Source Files GitHub -->
@@ -38,13 +32,12 @@
 		<!-- Local Includes -->
 		<script type="text/javascript"src="script.js"></script>
 		<link rel="stylesheet" href="style.css">
+
 		
 	</head>
+	<body style="background-color:;">
 	
-	<body style="background-image:url('');">
-	
-		
-		<div id="navigationBar">
+	<div id="navigationBar">
 		
 			<nav class="navbar navbar-default navbar-fixed-top navbar-static-top" id="navbar-default">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -60,8 +53,8 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					
 						<ul class="nav navbar-nav navbar-left">
-							<li class="" id=""><a href="../../../">HOME</a></li>
-							<li><a href="../../../contact">CONTACT</a></li>
+							<li class="active" id="active"><a href="?page=home">HOME</a></li>
+							<li><a href="contact">CONTACT</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WORKS<span class="caret"></span></a>
 								<ul class="dropdown-menu">
@@ -94,29 +87,43 @@
 				
 			</nav>
 		</div><br><br><br>
-		
-		<div style="color:Teal" align="left">
+	
+		<div style="color:Teal">
 			<strong>Hello Guys.....</strong>
 			<img src="index_files/emoji-7.png" alt="emoji" width="50" height="50" align=""/>
 			<img src="index_files/emoji-7.png" alt="emoji" width="50" height="50" align=""/>
 			<img src="index_files/emoji-7.png" alt="emoji" width="50" height="50" align=""/>
 		</div>
-		
 		<div align="right">
 			<h1 align="center">This is "
 				<strong style="color:teal;">Developers@Work</strong> "....
 				<img src="index_files/emoji-6.png" alt="emoji" width="50" height="50" align=""/>
 			</h1>
 		</div>
-		
 		<div align="center">
-			<strong align="center">I'm here to Explain You!!! About</strong>
-			<h1 style="color:tEAL;font-weight:bold;" align="center">CODING ANDROID DEVICE TREE</h1>
-			<img src="index_files/tree.jpg" alt="Android Tree" width="1000" height="" align="center"/><br><br>
+			<strong align="center">Today I'm here to Explain You!!!</strong>
 		</div>
-		
-		<div style="border:3px solid green;display:inline-block;">
-			<h2>Let's start with tools we need</h2><br><br>
+		<h1 style="color:tEAL;" align="center">CODING ANDROID DEVICE TREE GUIDE FOR BEGINNERS</h1>
+		<div style="display:inline;">
+			<img src="index_files/tree.jpg" alt="Android Tree" width="1000" height="" align="center"/>
+			<div align="center" style="display:inline;">
+				<div>
+					<script>
+						!function(d,s,id){
+							var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+							if(!d.getElementById(id)){
+								js=d.createElement(s);
+								js.id=id;
+								js.src=p+"://platform.twitter.com/widgets.js";
+								fjs.parentNode.insertBefore(js,fjs);
+							}
+						}
+						(document,"script","twitter-wjs");
+					</script>
+				</div>
+			</div>
+		</div>
+		<div>Let's start with tools we need<br><br>
 			<strong style="color:MediumVioletRed;">Ubuntu-64bit OS</strong> with full android development tools installed.<br><br>More than 
 			<strong style="color:MediumVioletRed;">100-GB</strong> of Hard Disk Space.<br><br>
 			<strong style="color:MediumVioletRed;">Internet Connection</strong> for downloading some data.<br><br>
@@ -130,8 +137,7 @@
 			<strong style="color:DeepSkyBlue;">CyanogenMod 11</strong> for the device 
 			<strong style="color:DeepSkyBlue;">Celkon A401</strong><br><br>
 		</div>
-		
-		<div>
+	<div>
 		<h1 style="color:DarkSlateGray;">Follow these Steps :</h1>
 		<div>
 			<h2 style="color:FireBrick;">1) Get your Stock - boot.img,recovery.img</h2>
@@ -149,7 +155,7 @@
 					<iframe src="index_files/gusbyq1e6BM.htm" allowfullscreen="" width="1000" height="500" frameborder="0"></iframe><br>Now Create stock folder in the Home and copy the files in it.
 					<img src="index_files/files.png" alt="Screenshot" width="1000" height="" align=""/>
 			</div>
-		</div><hr/>
+		</div>
 		<div>
 			<h2 style="color:FireBrick;">2) Get your Device Information</h2>
 			<a href="javascript:showhide('2')">
@@ -160,7 +166,7 @@
     Now open build.prop using your text editor.<img src="index_files/prop.png" alt="Screenshot" width="1000" height="" align=""><br><br>
     Check these <strong style="background-color:Black;color:Teal;">ro.product.brand=<br>ro.product.device=</strong><img src="index_files/info.png" alt="Screenshot" width="1000" height="" align="">
 			</div>
-		</div><hr/>
+		</div>
 		<div>
 			<h2 style="color:FireBrick;">3) Extract recovery.img using mkvendor.sh</h2>
 			<a href="javascript:showhide('3')"><button>Click Here to Expand</button></a>
@@ -178,13 +184,13 @@
     Now try this command to check unpackbootimg was detected <strong style="background-color:Black;color:Teal;">"which unpackbootimg"</strong> and press Enter.<br><img src="index_files/bootimg.png" alt="Screenshot" width="1000" height="" align=""><br><br>
     Now try this command again <strong style="background-color:Black;color:Teal;">"./build/tools/device/mkvendor.sh (brand) (device) (recovery.img location)"</strong> and press Enter.<br><img src="index_files/recovery.png" alt="Screenshot" width="1000" height="" align=""><br><br>
 			</div>
-		</div><hr/>
+		</div>
 		<div>
 			<h2 style="color:FireBrick;">4) Check All Files Extracted correctly</h2>
 			<a href="javascript:showhide('4')"><button>Click Here to Expand</button></a>
 			<div id="4" style="display:none;">Let's check was all files set correct in <strong style="background-color:Black;color:Teal;">device/brand/codename</strong><img src="index_files/extract.png" alt="Screenshot" width="1000" height="" align=""><br><br>
 			</div>
-		</div><hr/>
+		</div>
    <h2 style="color:FireBrick;">5) Making Device Tree Recognised in setup</h2>
    <a href="javascript:showhide('5')"><button>Click Here to Expand</button></a>
    <div id="5" style="display:none;"><p style="">We need to create a new file <strong style="background-color:Black;color:Teal;">vendorsetup.sh</strong><img src="index_files/vendorsetup.png" alt="Screenshot" width="1000" height="" align=""><br><br>
@@ -230,12 +236,12 @@ you need to edit the files in the tree and you also need <strong style="backgrou
    Now open <strong style="background-color:Black;color:Teal;">BoardConfig.mk</strong> using any text editor and add this line <strong style="background-color:Black;color:Teal;">RECOVERY_VARIANT := #</strong> in the place of # type the recovery key word.<img src="index_files/variant.png" alt="Screenshot" width="1000" height="" align=""><br><br>
    That's it you are Ready for building a new recovery variant but before making recovery make clean and clobber ........  
    </p></div>
-   <hr><hr></DIV> 
+   <hr><hr>
    <DIV align="center">
 		<iframe src="index_files/Uw_caMHZRC4.htm" allowfullscreen="" width="1000" height="600" frameborder="0"></iframe>
-   </div>
-		
-		 
-	</body>
-	
-</html>
+	<!-- Start of shorte.st banner code -->
+		<a href="http://join-shortest.com/ref/8011e399d9"><img src="https://static.shorte.st/bundles/smeuser/img/referral_banners/728x90.png?2016-12-21.0" title="Shorte.st links, biggest payouts. Join now" width="728" height="90" /></a>
+	<!-- End of shorte.st banner code -->
+   </DIV>  
+
+</body></html>
