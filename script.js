@@ -16,8 +16,8 @@ $(document).ready(function(){
 						if(typeof YouTubeRealCount !== "undefined"){
 							objectSearch.searchChannelPlacer(YouTubeRealCount);
 						}
-					},2000);
-				},1500);
+					},1000);
+				},1000);
 			},1000);
     },1800);
 });
