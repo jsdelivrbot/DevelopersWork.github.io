@@ -14,7 +14,7 @@ $(document).ready(function(){
 		document.getElementById('square250x250Ad').innerHTML = Ad4;
 		document.getElementById('skyscraper160x600Ad').innerHTML = Ad5;
 		document.getElementById('billBoard970x250Ad').innerHTML = Ad6;
-	},1000);
+	},2000);
 });
 
 function RandomiseAds(x=0){
