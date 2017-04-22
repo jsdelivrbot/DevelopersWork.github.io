@@ -1,27 +1,38 @@
-var YouTubeChannelID = [],YouTubeRealCountA= [];
+var YouTubeChannelID = [];
 
 function loadOnClick(){
-    var keywordFromUser = prompt("Enter Channel Title or ID:","UCQ6S1QvNYk46wMwWVBEDGHA") || ' ';
+//FUNCTION LOADS ON CLICK	
+    var keywordFromUser = prompt("Enter Channel Title or ID:","UCQ6S1QvNYk46wMwWVBEDGHA") || 'Developers@Work';
+	
     var newSearch = new search;
     var newCount = new count;
+	
     document.getElementById('RealTimeSubscribersCount').innerHTML = '';
+	
 	setTimeout(function(){
 		YouTubeChannelId = newSearch.searchChannel(keywordFromUser);
-    setTimeout(function(){
-        newCount.countUpdatePublic(YouTubeChannelId);
-        setInterval(function(){
-            newCount.countUpdatePublic(YouTubeChannelId);
-        },3000);
-    },900);
+		
+		setTimeout(function(){
+			newCount.countUpdatePublic(YouTubeChannelId);
+		
+			setInterval(function(){
+				newCount.countUpdatePublic(YouTubeChannelId);
+			
+			},3000);
+		},900);
 	},900);
     
 }
 
 var search = function(){
+//SEARCH class Begins
     var YouTubeTitle = [],YouTubeId = [],YouTubeThumbnail = [], YouTubeThumbnaildefault = [], YouTubePublishedAt = [], YouTubeDescription = [];
 	this.YouTubeChannelId;
+	
     function searchCode(keyword){
+	//PRIVATE FUNCTION TO SEARCH A CHANNEL	
         var APIKey = youtubeAPI();
+	
         $.get("https://www.googleapis.com/youtube/v3/search",{
 					part: 'snippet',
 					q: keyword,
@@ -42,12 +53,18 @@ var search = function(){
                     YouTubeChannelId = YouTubeId[0];     
 				});
 	}
+	
     this.searchChannelLog = function(keyword){
+		
         searchCode(keyword);
+		
         console.log(YouTubeChannelID);
+		
 		return this.YouTubeChannelId;
     }
+	
     this.searchChannelHTMLPlacer = function(i,YouTubeRealCount){
+	//PLACES THE EVERYTHING IN A HORIZONTAL LINE WITH SUBCOUNT
              $("#RealTimeSubscribersCount").append('<br/>\
                 <div id="'+YouTubeTitle[i]+'" style="display:inline">\
                     <img src="'+YouTubeThumbnaildefault[i]+'"/>\
@@ -58,8 +75,11 @@ var search = function(){
                         Subscribers:'+YouTubeRealCount+'\
                     </div>\
                 </div><br/>');
+				
 	}
+	
 	this.searchChannelPlacer = function(YouTubeRealCount){
+	//USED IN HOME PAGE || PLACES THE HTML WITH LINK ONCLICK OPTION TO SUBSCRIBE 	
              $("#RealTimeSubscribersCount").append('<br/>\
                 <div id="'+YouTubeTitle[0]+'">\
 					<a href="https://www.youtube.com/channel/'+YouTubeChannelId+'?sub_confirmation=1" style="text-decoration:none;" target="_blank">\
@@ -74,12 +94,19 @@ var search = function(){
 						</div>\
 					</a>\
                 </div><br/>');
+				
 	}
+	
     this.searchChannel = function(keyword){
+	//COMMON FUNCTION TO CALL FOR EMBED THE COUNT WITH CHANNEL THUMBNAIL	
         searchCode(keyword);
+		
         setTimeout(function(){
+			
 			if(typeof YouTubeChannelId !== "undefined"){
+				
 				console.log(YouTubeChannelId);
+				
 				$("#RealTimeSubscribersCount").append('\
 					<div id="'+YouTubeTitle[0]+'"align="center">\
 						<img src="'+YouTubeThumbnail[0]+'"/>\
@@ -90,15 +117,23 @@ var search = function(){
 					</div><br/><br/>');
 			}
 		},950);
+		
 		return this.YouTubeChannelId;
-    }    
+    } 
+
+//SEARCH class Ended
+	
 };
 
 var count = function(){
+//COUNT class Begins	
     var YouTubeCount = [], YouTubeViewCount = [], YouTubeCommentCount = [], YouTubeVideoCount = [];
 	this.YouTubeRealCount;
+	
     function countCode(YouTubeId){
+		
         var APIKey = youtubeAPI();
+		
 	    $.get("https://www.googleapis.com/youtube/v3/channels",{
 			    part:'statistics',
 			    id : YouTubeId,
@@ -113,74 +148,90 @@ var count = function(){
 				YouTubeVideoCount[0] = temp.statistics.videoCount;
                 YouTubeRealCount = YouTubeCount[0];
             });
+			
     }
+	
 	function countChannel(YouTubeId){
+		
         countCode(YouTubeId);
+		
         setTimeout(function(){
             console.log(YouTubeRealCount);
         },800);
     }
+	
     function countUpdate(YouTubeChannelId,a){
+	//'a' for the embed the YouTubeRealCount 
         if(typeof YouTubeChannelId !== "undefined"){
+			
             countChannel(YouTubeChannelId);
             if(a == 1){
                 setTimeout(function(){
+					
                     if(typeof YouTubeRealCount !== "undefined"){
+						
                         document.getElementById(YouTubeChannelId).innerHTML = this.YouTubeRealCount;
                     }
                 },500);
             }
         }else setTimeout(function(){
+			
             if(typeof YouTubeChannelId !== "undefined"){
+				
                 countChannel(YouTubeChannelId);
+				
                 if(a == 1){
+					
                     setTimeout(function(){
+						
                         if(typeof YouTubeRealCount !== "undefined"){
+							
                             document.getElementById(YouTubeChannelId).innerHTML = this.YouTubeRealCount;
                         }
                     },500);
                 }
             }else setTimeout(function(){
 				if(typeof YouTubeChannelId !== "undefined"){
+					
 					countChannel(YouTubeChannelId);
 					if(a == 1){
+						
 						setTimeout(function(){
+							
 							if(typeof YouTubeRealCount !== "undefined"){
+								
 								document.getElementById(YouTubeChannelId).innerHTML = this.YouTubeRealCount;
 							}
 						},500);
 					}
-				}else setTimeout(function(){
-					if(typeof YouTubeChannelId !== "undefined"){
-						countChannel(YouTubeChannelId);
-						if(a == 1){
-							setTimeout(function(){
-								if(typeof YouTubeRealCount !== "undefined"){
-									document.getElementById(YouTubeChannelId).innerHTML = this.YouTubeRealCount;
-								}
-							},500);
-						}
-					}
-				},1000);
+				}
 			},600);
         },600);
     }
+	
 	this.countChannelNoUpdate = function(YouTubeId){
+	//FUNTION USED FOR THE SUBSCRIBER COUNT || ONLY ONCE	
         countCode(YouTubeId);
+		
 		setTimeout(function(){
 			console.log(YouTubeRealCount);
+			
 		},1000);
+		
 		return this.YouTubeRealCount;
+		
     }
+	
     this.countUpdatePublic = function(YouTubeId,a = 1){
+	//PUBLIC FUNCTION COMMONLY USED FOR CONTINOUS COUNT || SEND 'a=0' TO STOP THE PAGE EMBED OF COUNT
 		countUpdate(YouTubeId,a);
+		
 		return this.YouTubeRealCount;
+		
     }
+	
+//COUNT class Ended
+	
 };
 
-function randomChannel(){
-	list = ['UC03laasODNVJM3o-JMPnrNw','Developers@Work','UCQ6S1QvNYk46wMwWVBEDGHA','UC03laasODNVJM3o-JMPnrNw','Developers@Work','Developers@Work'];
-	var channel = list[Math.floor(Math.random()*list.length)];
-	return(channel);
-}
 
