@@ -1,5 +1,6 @@
 body{
- margin:3px;	
+	margin:3px;
+	text-align: center; 
 }
 
 img{
@@ -21,24 +22,47 @@ img{
 	display:none;
 }
 
-#mediumRectangleAd{
-	width:350px;
-	height:300px;
+#fullBanner468x60Ad{
+	border:1px solid green;
+	width:;
+	height:;
+	display:inline-block;
+    margin:0px;
 }
-
-#halfPageAd{
-	width:340px;
-	height:620px;
+#leaderboard728x90Ad{
+	border:1px solid green;
+	width:;
+	height:;
+	display:inline-block;
+    margin:0px;
 }
-
-#barAd{
-	width:750px;
-	height:100px;
+#mediumRectangle336x280Ad{
+	border:1px solid green;
+	width:;
+	height:;
+	display:inline-block;
+    margin:0px;
 }
-
-#billBoardAd{
-	width:1000px;
-	height:260px;
+#square250x250Ad{
+	border:1px solid green;
+	width:;
+	height:;
+	display:inline-block;
+    margin:0px;
+}
+#skyscraper160x600Ad{
+	border:1px solid green;
+	width:;
+	height:;
+	display:inline-block;
+    margin:0px;
+}
+#billBoard970x250Ad{
+	border:1px solid green;
+	width:;
+	height:;
+	display:inline-block;
+    margin:0px;
 }
 
 
