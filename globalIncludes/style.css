@@ -9,56 +9,50 @@ img{
 }
 
 #loader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 99;
-	background: url('omni/loader.gif') 50% 50% no-repeat rgb(249,249,249);
+
 }
 
 #navigationBar{
 	display:none;
 }
 
-#fullBanner468x60Ad{
-	border:1px solid green;
+.fullBanner468x60Ad{
+	border:0px solid grey;
 	width:;
 	height:;
 	display:inline-block;
     margin:0px;
 }
-#leaderboard728x90Ad{
-	border:1px solid green;
+.leaderboard728x90Ad{
+	border:0px solid grey;
 	width:;
 	height:;
 	display:inline-block;
     margin:0px;
 }
-#mediumRectangle336x280Ad{
-	border:1px solid green;
+.mediumRectangle336x280Ad{
+	border:0px solid grey;
 	width:;
 	height:;
 	display:inline-block;
     margin:0px;
 }
-#square250x250Ad{
-	border:1px solid green;
+.square250x250Ad{
+	border:0px solid grey;
 	width:;
 	height:;
 	display:inline-block;
     margin:0px;
 }
-#skyscraper160x600Ad{
-	border:1px solid green;
+.skyscraper160x600Ad{
+	border:0px solid grey;
 	width:;
 	height:;
 	display:inline-block;
     margin:0px;
 }
-#billBoard970x250Ad{
-	border:1px solid green;
+.billBoard970x250Ad{
+	border:0px solid grey;
 	width:;
 	height:;
 	display:inline-block;
