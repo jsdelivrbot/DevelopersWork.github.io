@@ -108,12 +108,12 @@ var search = function(){
 				console.log(YouTubeChannelId);
 				
 				$("#RealTimeSubscribersCount").append('\
-					<div id="'+YouTubeTitle[0]+'"align="center">\
+					<div id="'+YouTubeTitle[0]+'>\
 						<img src="'+YouTubeThumbnail[0]+'"/>\
 						<div id="'+YouTubeTitle[0]+'" onClick="loadOnClick();"style="font-size:40px;color:grey;">\
 							'+YouTubeTitle[0]+'\
 						</div>\
-						<div id="'+YouTubeChannelId+'" style="font-size:75px;color:#ccc;"></div>\
+						<div id="'+YouTubeChannelId+'" style="font-size:75px;color:#ccc;white-space:nowrap;overflow:hidden;"></div>\
 					</div><br/><br/>');
 			}
 		},950);
