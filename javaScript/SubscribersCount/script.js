@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var keyword = randomChannel();
+	var keyword = 'Developers@Work';
     var intialSearch = new search;
     var intialCount = new count;
     YouTubeChannelId = intialSearch.searchChannel(keyword);
@@ -17,7 +17,7 @@ $(document).ready(function(){
 				//},1500);
 				setInterval(function(){
 					intialCount.countUpdatePublic(YouTubeChannelId);
-				},2000);
+				},3000);
 			}
 		},1000);
 });
