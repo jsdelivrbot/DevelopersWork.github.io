@@ -15,7 +15,7 @@
 		<title id="title">Home - Developers@Work</title>
 		
 		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         
         <!-- Font Links -->
 		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"/>
@@ -74,17 +74,35 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					
 						<ul class="nav navbar-nav navbar-left">
-							<li class="active" id="active"><a href="?page=home">HOME</a></li>
+							<li class="active" id="active"><a href="#/HOME">HOME</a></li>
 							<li><a href="contact">CONTACT</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WORKS<span class="caret"></span></a>
 								<ul class="dropdown-menu">
-									<li><a href="works/liveSubscriberCount">Live Subscriber Count</a></li>
-									<li><a href="works/GUIDES/AndrodDeviceTree">Android Device Tree Build</a></li>
+									<li><a href="works/liveSubscriberCount" >Live Subscriber Count</a></li>
+									<li role="separator" class="divider"></li>
+									<li class="dropdown-submenu">
+										<a class="test" tabindex="-1" href="#/GUIDES">GUIDES<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a tabindex="-1" href="works/GUIDES/AndrodDeviceTree">Android Device Tree Build</a></li>
+										</ul>
+									</li>
 							<!--	<li><a href="works/">Another action</a></li>
 									<li><a href="#">Something else here</a></li>
 									<li role="separator" class="divider"></li>
-									<li><a href="#">Separated link</a></li>     -->
+									<li><a href="#">Separated link</a></li>  
+									<li class="dropdown-submenu">
+										<a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+											<li class="dropdown-submenu">
+												<a class="test" href="#">Another dropdown <span class="caret"></span></a>
+												<ul class="dropdown-menu">
+													<li><a href="#">3rd level dropdown</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>		-->
 								</ul>
 							</li>
 						</ul>
@@ -94,10 +112,6 @@
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SHOPS<span class="caret"></span></a>
 								<ul class="dropdown-menu">
 									<li><a href="http://shop.spreadshirt.com/DevelopersWork" target="_blank">HOODIES@SPREADSHIRT</a></li>
-							<!--	<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-									<li role="separator" class="divider"></li>
-									<li><a href="#">Separated link</a></li>		-->
 								</ul>
 							</li>
 							<li><a href="support">SUPPORT</a></li>

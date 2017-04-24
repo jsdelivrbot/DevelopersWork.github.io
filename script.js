@@ -1,11 +1,15 @@
 
 $(document).ready(function(){
+	//OBJECTS FOR SEARCH AND COUNT
 	var objectSearch = new search;
 	var objectCount = new count;
-	objectSearch.searchChannelLog('Developers@Work');
-	YouTubeChannelId = objectSearch.YouTubeChannelId;
+	
+	YouTubeChannelId = objectSearch.searchChannelLog('UCNLm0XtW8zWuzmhD5BqXagw');
+	
     setTimeout(function(){
-		YouTubeRealCount = objectCount.countChannelNoUpdate(YouTubeChannelId);
+		if(typeof YouTubeChannelId !== "undefined"){
+			YouTubeRealCount = objectCount.countChannelNoUpdate(YouTubeChannelId);
+			
 			setTimeout(function(){
 				if(typeof YouTubeRealCount !== "undefined"){
 					objectSearch.searchChannelPlacer(YouTubeRealCount);
@@ -19,5 +23,34 @@ $(document).ready(function(){
 					},1000);
 				},1000);
 			},1000);
-    },1800);
+			
+		}else{
+			
+			setTimeout(function(){
+				if(typeof YouTubeChannelId !== "undefined"){
+					YouTubeRealCount = objectCount.countChannelNoUpdate(YouTubeChannelId);
+					
+					setTimeout(function(){
+						if(typeof YouTubeRealCount !== "undefined"){
+							objectSearch.searchChannelPlacer(YouTubeRealCount);
+						}else setTimeout(function(){
+							if(typeof YouTubeRealCount !== "undefined"){
+								objectSearch.searchChannelPlacer(YouTubeRealCount);
+							}else setTimeout(function(){
+								if(typeof YouTubeRealCount !== "undefined"){
+									objectSearch.searchChannelPlacer(YouTubeRealCount);
+								}
+							},1000);
+						},1000);
+					},1000);
+					
+				}
+				
+			},1000);
+			
+		}
+		
+	},1500);
+	
+	
 });

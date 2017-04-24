@@ -19,4 +19,10 @@ $(document).ready(function(){
         $("#navigationBar").show('fadeIn',{},500)
     },5000);
 	
+	$('.dropdown-submenu a.test').on("click", function(e){
+		$(this).next('ul').toggle();
+		e.stopPropagation();
+		e.preventDefault();
+	});
+	
 });
