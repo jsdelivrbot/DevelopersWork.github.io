@@ -27,6 +27,6 @@ SUPPORT US
 # http://viid.me/qtoOzq◄
 
 
-To Pull Code 'git pull website YouTube-Projects --allow-unrelated-histories'
+To Pull Code 'git pull website modules --allow-unrelated-histories'
 
 To Push Code 'git push https://github.com/DevelopersWork/DevelopersWork.github.io.git  HEAD:modules'
