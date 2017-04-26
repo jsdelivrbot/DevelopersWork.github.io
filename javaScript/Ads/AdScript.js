@@ -1,21 +1,35 @@
 
 
-	var Ad1 = RandomiseAds(1), 
-		Ad2 = RandomiseAds(2),
-		Ad3 = RandomiseAds(3),
-		Ad4 = RandomiseAds(4),
-		Ad5 = RandomiseAds(5),
-		Ad6 = RandomiseAds(6);
+setTimeout(function(){
+			
+	Ad1 = RandomiseAds(1); 
+	Ad2 = RandomiseAds(2);
+	Ad3 = RandomiseAds(3);
+	Ad4 = RandomiseAds(4);
+	Ad5 = RandomiseAds(5);
+	Ad6 = RandomiseAds(6);
+					
+},1500);
+	
+setTimeout(function(){
+	
+	amazonSlideshowPCGames = document.getElementById('amazonSlideshowPCGames').innerHTML;
+				
+},1000);
 		
 		
 $(document).ready(function(){
+	
+	setTimeout(function(){
+		
 		document.getElementById('fullBanner468x60Ad').innerHTML = Ad1;
 		document.getElementById('leaderboard728x90Ad').innerHTML = Ad2;
 		document.getElementById('mediumRectangle336x280Ad').innerHTML = Ad3;
 		document.getElementById('square250x250Ad').innerHTML = Ad4;
 		document.getElementById('skyscraper160x600Ad').innerHTML = Ad5;
 		document.getElementById('billBoard970x250Ad').innerHTML = Ad6;
-	
+		
+	},2500);
 });
 
 function RandomiseAds(x=0){
@@ -31,14 +45,14 @@ function RandomiseAds(x=0){
 		,'<a href="http://join-shortest.com/ref/8011e399d9"><img src="https://static.shorte.st/bundles/smeuser/img/referral_banners/350x19.png?2017-04-20.0" title="Share your links and earn real money" width="350" height="19" /></a> '
 		,'<a href="http://api.hostinger.in/redir/17850336" target="_blank"><img src="http://www.hostinger.in/banners/en/hostinger-728x90-2.gif" alt="Free Hosting" border="0" width="728" height="90" /></a>'
 		,'<a href="http://api.hostinger.in/redir/17850336" target="_blank"><img src="http://www.hostinger.in/banners/en/hostinger-728x90-1.gif" alt="Free Hosting" border="0" width="728" height="90" /></a>'
-		,'<script type="text/javascript" language="javascript">var aax_size="728x90";var aax_pubname = "developerswork-21";var aax_src="302";</script><script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>'
+		,'<iframe src="//c.amazon-adsystem.com/aax2/assoc_lra.html?tag=developerswork-21&amp;c=100&amp;src=302&amp;sz=728x90" scrolling="no" border="0" marginwidth="0" style="border:none;" height="90" frameborder="0" width="728"></iframe>'
 		],
 	mediumRectangleAd = [
 		'<a href="http://join-shortest.com/ref/8011e399d9"><img src="https://static.shorte.st/bundles/smeuser/img/referral_banners/300x250.png?2017-04-20.0" title="Earn money on short links" width="300" height="250" /></a> '
 		,'<a href="http://api.hostinger.in/redir/17850336" target="_blank"><img src="http://www.hostinger.in/banners/en/hostinger-300x250-2.gif" alt="Free Hosting" border="0" width="300" height="250" /></a>'
 		,'<a href="http://api.hostinger.in/redir/17850336" target="_blank"><img src="http://www.hostinger.in/banners/en/hostinger-300x250-1.gif" alt="Free Hosting" border="0" width="300" height="250" /></a>'
-		,'<SCRIPT charset="utf-8" type="text/javascript" src="http://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=IN&ID=V20070822%2FIN%2Fdevelwork-21%2F8003%2Fb7b5bdc3-11a2-4c1a-b3fb-5f4e810c451b&Operation=GetScriptTemplate"></SCRIPT><NOSCRIPT><A rel="nofollow" HREF="http://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=IN&ID=V20070822%2FIN%2Fdevelwork-21%2F8003%2Fb7b5bdc3-11a2-4c1a-b3fb-5f4e810c451b&Operation=NoScript">Amazon.in Widgets</A></NOSCRIPT>'
-		,'<script type="text/javascript" language="javascript">var aax_size="300x250";var aax_pubname = "developerswork-21";var aax_src="302";</script><script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>'
+		,amazonSlideshowPCGames
+		,'<iframe src="//c.amazon-adsystem.com/aax2/assoc_lra.html?tag=developerswork-21&amp;c=100&amp;src=302&amp;sz=300x250" scrolling="no" border="0" marginwidth="0" style="border:none;" height="250" frameborder="0" width="300"></iframe>'
 		], 
 	squareAd = [
 		'<a href="http://join-shortest.com/ref/8011e399d9"><img src="https://static.shorte.st/bundles/smeuser/img/referral_banners/250x250_2.png?2017-04-20.0" title="Share your links over the internet and get paid" width="250" height="250"/></a>'
@@ -51,12 +65,14 @@ function RandomiseAds(x=0){
 		,'<a href="http://api.hostinger.in/redir/17850336" target="_blank"><img src="http://www.hostinger.in/banners/en/hostinger-160x600-2.gif" alt="Free Hosting" border="0" width="160" height="600" /></a>'
 		,'<a href="http://api.hostinger.in/redir/17850336" target="_blank"><img src="http://www.hostinger.in/banners/en/hostinger-160x600-1.gif" alt="Free Hosting" border="0" width="160" height="600" /></a>'
 		,skyscraperAmazonMobiles(4)
-		,'<script type="text/javascript" language="javascript">var aax_size="160x600";var aax_pubname = "developerswork-21";var aax_src="302";</script><script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>'
+		,'<iframe src="//c.amazon-adsystem.com/aax2/assoc_lra.html?tag=developerswork-21&amp;c=100&amp;src=302&amp;sz=160x600" scrolling="no" border="0" marginwidth="0" style="border:none;" height="600" frameborder="0" width="160"></iframe>'
+		,skyscraperAmazonMobiles(3)
+		,skyscraperAmazonMobiles(4)
 		], 
 	billBoardAd = [
 		'<a href="http://api.hostinger.in/redir/17850336" target="_blank"><img src="http://www.hostinger.in/banners/en/hostinger-600x400-1.gif" alt="Free Hosting" border="0" width="600" height="400" /></a>'
 		,'<a href="http://api.hostinger.in/redir/17850336" target="_blank"><img src="http://www.hostinger.in/banners/en/hostinger-600x400-2.gif" alt="Free Hosting" border="0" width="600" height="400" /></a>'
-		,'<script type="text/javascript" language="javascript">var aax_size="300x600";var aax_pubname = "developerswork-21";var aax_src="302";</script><script type="text/javascript" language="javascript" src="http://c.amazon-adsystem.com/aax2/assoc.js"></script>'
+		,'<iframe src="//c.amazon-adsystem.com/aax2/assoc_lra.html?tag=developerswork-21&amp;c=100&amp;src=302&amp;sz=300x600" scrolling="no" border="0" marginwidth="0" style="border:none;" height="600" frameborder="0" width="300"></iframe>'
 		];
 	
 	var fullBanner = fullBannerAd[Math.floor(Math.random()*fullBannerAd.length)],
@@ -86,6 +102,13 @@ function skyscraperAmazonMobiles(x){
 		,'<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=developerswork-21&marketplace=amazon&region=IN&placement=B01FM7GIR4&asins=B01FM7GIR4&linkId=c9cd287b420edd517a2036cc2415cec9&show_border=true&link_opens_in_new_window=true"></iframe>'
 		,'<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=developerswork-21&marketplace=amazon&region=IN&placement=B01LXMHNMQ&asins=B01LXMHNMQ&linkId=14eb8c234b2b4cc8be5eb4ed5bbeed25&show_border=true&link_opens_in_new_window=true"></iframe>'
 		,'<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=developerswork-21&marketplace=amazon&region=IN&placement=B01MZ1FD81&asins=B01MZ1FD81&linkId=52b9b5d42b7532c1075a2c514e7d574f&show_border=false&link_opens_in_new_window=true"></iframe>'
+		,'<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=developerswork-21&marketplace=amazon&region=IN&placement=B01NCN73TZ&asins=B01NCN73TZ&linkId=37facfe65748e67b651c93d53c148df7&show_border=false&link_opens_in_new_window=true"></iframe>'
+		,'<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=developerswork-21&marketplace=amazon&region=IN&placement=B01N0SI0TB&asins=B01N0SI0TB&linkId=d5a1d494e0d531d50b87026a3e283018&show_border=false&link_opens_in_new_window=true"></iframe>'
+		,'<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=developerswork-21&marketplace=amazon&region=IN&placement=B01N1TZ0NX&asins=B01N1TZ0NX&linkId=230751ad58e97c1d078688bdd0a19d61&show_border=false&link_opens_in_new_window=true"></iframe>'
+		,'<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=developerswork-21&marketplace=amazon&region=IN&placement=B01FM7H0K8&asins=B01FM7H0K8&linkId=c83e793a6b06bfd3ecbcf5340bf61445&show_border=false&link_opens_in_new_window=true"></iframe>'
+		,'<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=developerswork-21&marketplace=amazon&region=IN&placement=B01NCN4ICO&asins=B01NCN4ICO&linkId=ad5404843436802666b5b32a84bb273e&show_border=false&link_opens_in_new_window=true"></iframe>'
+		,'<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=developerswork-21&marketplace=amazon&region=IN&placement=B01DDP7D6W&asins=B01DDP7D6W&linkId=7d1f8eee52bfce5bebd54ff3111436aa&show_border=false&link_opens_in_new_window=true"></iframe>'
+		,'<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=developerswork-21&marketplace=amazon&region=IN&placement=B01FM7GGFI&asins=B01FM7GGFI&linkId=f2010d20aca6d25b90466056bbcf3a81&show_border=false&link_opens_in_new_window=true"></iframe>'
 		];
 		
 	for(var i=0;count<x;i++){
