@@ -1,13 +1,10 @@
 if (location.hostname !== "localhost"){
 	
-	if(navigator.onLine){
+	alert('Please Check your Internet Connection and Try again.');
 		
-		window.location.href = "http://developersWork.github.io";
-		
-	} else{
-		
-		alert('Please Check your Internet Connection and Try again.');
-		
-	}
+	window.location.href = "http://developersWork.github.io";
 	
 }
+		
+		
+		
