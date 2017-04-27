@@ -5,7 +5,7 @@ $(document).ready(function(){
 		var configuration = {
 			"token": "4f7705ffeea30fc1fb666a0a25bb1a5f",
 			"excludeDomains": [
-				"developerswork.github.io"
+				"nothing.com"
 			],
 			"capping": {
 				"limit": 5,
@@ -69,52 +69,3 @@ function youtubeAPI(){
 		var APIKey = keys[Math.floor(Math.random()*keys.length)];
         return APIKey;
 }
-function youtubeCLIENTId(){
-        var CLIENTIDs = [
-		    '330348809628-p7c5ol1c35s964282g1rolhkdu7k6fje.apps.googleusercontent.com',	
-            '330348809628-9ai4sq6qvajqnrd68b69phm896849jla.apps.googleusercontent.com'
-		];
-		var CLIENT_ID = keys[Math.floor(Math.random()*CLIENTIDs.length)];
-        return CLIENT_ID;
-
-}
-function youtubeCLIENTId(){
-    var OAUTH2_CLIENT_ID = youtubeCLIENTId();
-    var OAUTH2_SCOPES = [
-        'https://www.googleapis.com/auth/youtube',
-        'https://www.googleapis.com/auth/youtube.force-ssl'
-    ];
-    googleApiClientReady = function() {
-        gapi.auth.init(function() {
-            window.setTimeout(checkAuth, 1);
-        });
-    }
-    function checkAuth(){
-        gapi.auth.authorize({
-            client_id: OAUTH2_CLIENT_ID,
-            scope: OAUTH2_SCOPES,
-            immediate: true
-        }, handleAuthResult);
-    }
-    function handleAuthResult(authResult) {
-        if (authResult && !authResult.error) {
-            $('.pre-auth').hide();
-            $('.post-auth').show();
-            loadAPIClientInterfaces();
-        }else{
-            $('#login-link').click(function(){
-                gapi.auth.authorize({
-                    client_id: OAUTH2_CLIENT_ID,
-                    scope: OAUTH2_SCOPES,
-                    immediate: false
-                }, handleAuthResult);
-            });
-        }
-    }
-    function loadAPIClientInterfaces(){
-        gapi.client.load('youtube', 'v3', function(){
-            handleAPILoaded();
-        });
-    }
-}
-
