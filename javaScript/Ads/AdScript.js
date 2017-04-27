@@ -52,7 +52,7 @@ function RandomiseAds(x=0){
 		AmazonHeadphones(3)
 		,'<a href="http://api.hostinger.in/redir/17850336" target="_blank"><img src="http://www.hostinger.in/banners/en/hostinger-300x250-2.gif" alt="Free Hosting" border="0" width="300" height="250" /></a>'
 		,'<a href="http://api.hostinger.in/redir/17850336" target="_blank"><img src="http://www.hostinger.in/banners/en/hostinger-300x250-1.gif" alt="Free Hosting" border="0" width="300" height="250" /></a>'
-		,amazonSlideshowPCGames
+		,'<embed type="application/x-shockwave-flash" src="http://g-ecx.images-amazon.com/images/G/31/associates/widgets//20070822/IN/Flash/Widgets._V2078899969_.swf?ServiceVersion=20070822&amp;MarketPlace=IN&amp;ID=V20070822/IN/develwork-21/8003/b7b5bdc3-11a2-4c1a-b3fb-5f4e810c451b&amp;rt=as_sl_pc_wdgt_ex&amp;panda=1" style="undefined" id="amzn_wdgt_b7b5bdc3-11a2-4c1a-b3fb-5f4e810c451b" name="amzn_wdgt_b7b5bdc3-11a2-4c1a-b3fb-5f4e810c451b" quality="high" bgcolor="#FFFFFF" allowscriptaccess="always" wmode="" height="250" width="300">'
 		,'<iframe src="//c.amazon-adsystem.com/aax2/assoc_lra.html?tag=developerswork-21&amp;c=100&amp;src=302&amp;sz=300x250" scrolling="no" border="0" marginwidth="0" style="border:none;" height="250" frameborder="0" width="300"></iframe>',
 		AmazonMobiles(3)
 		], 
