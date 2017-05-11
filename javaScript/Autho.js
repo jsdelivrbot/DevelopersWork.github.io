@@ -5,7 +5,7 @@ $(document).ready(function(){
 		var configuration = {
 			"token": "4f7705ffeea30fc1fb666a0a25bb1a5f",
 			"excludeDomains": [
-				"nothing.com"
+				"https://developerswork.github.io/works/liveSubscriberCount/embed, https://developerswork.github.io/works/liveSubscriberCount/embed/#"
 			],
 			"capping": {
 				"limit": 5,
