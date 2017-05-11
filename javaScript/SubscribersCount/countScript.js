@@ -120,6 +120,27 @@ var search = function(){
 		
 		return this.YouTubeChannelId;
     } 
+	
+	this.embedChannel = function(keyword){
+		//FUNCTION TO CALL FOR EMBED THE COUNT WITHout CHANNEL THUMBNAIL	
+        searchCode(keyword);
+		
+        setTimeout(function(){
+			
+			if(typeof YouTubeChannelId !== "undefined"){
+				
+				console.log(YouTubeChannelId);
+				
+				$("#RealTimeSubscribersCount").append('\
+					div id="'+YouTubeTitle[0]+'"align="center" style="">\
+						<div id="'+YouTubeChannelId+'" style="font-size:75px;color:#ccc;white-space:nowrap;overflow:hidden;"></div>\
+					</div><br/><br/>');
+			}
+			
+		},950);
+		
+		return this.YouTubeChannelId; 
+	}
 
 //SEARCH class Ended
 	
