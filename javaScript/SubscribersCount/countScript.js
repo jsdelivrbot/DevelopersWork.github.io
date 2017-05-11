@@ -30,6 +30,7 @@ var search = function(){
 	this.YouTubeChannelId;
 	
     function searchCode(keyword){
+		keyword = keyword || 'Developers@Work';
 	//PRIVATE FUNCTION TO SEARCH A CHANNEL	
         var APIKey = youtubeAPI();
 	
