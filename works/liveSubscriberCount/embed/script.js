@@ -1,5 +1,5 @@
+var keyword = 'Developers@Work';
 $(document).ready(function(){
-	var keyword = 'Developers@Work';
     var intialSearch = new search;
     var intialCount = new count;
     YouTubeChannelId = intialSearch.embedChannel(keyword);
