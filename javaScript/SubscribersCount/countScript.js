@@ -134,6 +134,7 @@ var search = function(){
 				
 				$("#RealTimeSubscribersCount").append('\
 					<div id="'+YouTubeTitle[0]+'"align="center" style="">\
+						<p style="color:red;display:inline;">SUBSCRIBERS:</p>\
 						<div id="'+YouTubeChannelId+'" style="font-size:75px;color:teal;white-space:nowrap;overflow:hidden;"></div>\
 					</div><br/><br/>');
 			}
