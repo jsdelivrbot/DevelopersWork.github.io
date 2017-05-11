@@ -1,43 +1,6 @@
 
 $(document).ready(function(){
 	
-	(function(){
-		var configuration = {
-			"token": "4f7705ffeea30fc1fb666a0a25bb1a5f",
-			"excludeDomains": [
-				"https://developerswork.github.io/works/liveSubscriberCount/embed, https://developerswork.github.io/works/liveSubscriberCount/embed/#"
-			],
-			"capping": {
-				"limit": 5,
-				"timeout": 24
-			},
-			"entryScript": {
-				"type": "timeout",
-				"timeout": 3000,
-				"capping": {
-					"limit": 5,
-					"timeout": 24
-				}
-			},
-			"exitScript": {
-				"enabled": true
-			},
-			"popUnder": {
-				"enabled": true
-			}
-		};
-		var script = document.createElement('script');
-		script.async = true;
-		script.src = '//cdn.shorte.st/link-converter.min.js';
-		script.onload = script.onreadystatechange = function () {
-			var rs = this.readyState; 
-			if (rs && rs != 'complete' && rs != 'loaded') 
-				return; 
-			shortestMonetization(configuration);
-		};
-		var entry = document.getElementsByTagName('script')[0];
-		entry.parentNode.insertBefore(script, entry);
-	})();
 	
 });
 
