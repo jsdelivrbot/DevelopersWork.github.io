@@ -1,56 +1,13 @@
 
 $(document).ready(function(){
-	//OBJECTS FOR SEARCH AND COUNT
-	var objectSearch = new search;
-	var objectCount = new count;
 	
-	YouTubeChannelId = objectSearch.searchChannelLog('UCNLm0XtW8zWuzmhD5BqXagw');
-	
-    setTimeout(function(){
-		if(typeof YouTubeChannelId !== "undefined"){
-			YouTubeRealCount = objectCount.countChannelNoUpdate(YouTubeChannelId);
-			
-			setTimeout(function(){
-				if(typeof YouTubeRealCount !== "undefined"){
-					objectSearch.searchChannelPlacer(YouTubeRealCount);
-				}else setTimeout(function(){
-					if(typeof YouTubeRealCount !== "undefined"){
-						objectSearch.searchChannelPlacer(YouTubeRealCount);
-					}else setTimeout(function(){
-						if(typeof YouTubeRealCount !== "undefined"){
-							objectSearch.searchChannelPlacer(YouTubeRealCount);
-						}
-					},1000);
-				},1000);
-			},1000);
-			
-		}else{
-			
-			setTimeout(function(){
-				if(typeof YouTubeChannelId !== "undefined"){
-					YouTubeRealCount = objectCount.countChannelNoUpdate(YouTubeChannelId);
-					
-					setTimeout(function(){
-						if(typeof YouTubeRealCount !== "undefined"){
-							objectSearch.searchChannelPlacer(YouTubeRealCount);
-						}else setTimeout(function(){
-							if(typeof YouTubeRealCount !== "undefined"){
-								objectSearch.searchChannelPlacer(YouTubeRealCount);
-							}else setTimeout(function(){
-								if(typeof YouTubeRealCount !== "undefined"){
-									objectSearch.searchChannelPlacer(YouTubeRealCount);
-								}
-							},1000);
-						},1000);
-					},1000);
-					
-				}
-				
-			},1000);
-			
-		}
-		
-	},1500);
-	
-	
+	this.keyword = 'UCNLm0XtW8zWuzmhD5BqXagw';
+
+	var intialSearch = new searchChannel(this.keyword);
+	intialSearch.searchChannelCode();
+
+	var intialCount = new channelSubscriberCount(this.keyword);
+	intialCount.channelSubscriberCountCode();
+	intialSearch.placeSearchedchannelsFixedCount(intialCount.YouTubeSubscriberCount[0],0);
+
 });

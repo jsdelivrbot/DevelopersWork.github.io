@@ -1,8 +1,7 @@
 body,html{
 	height: 100%;
-	margin:3px;
 	background:#022b3a;
-	color:white;
+	color:#ccc;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -11,14 +10,17 @@ img{
 	max-height:100%;
 }
 
-a{
+a {
 	text-decoration:none;
-	color:white;
+	color:#ccc;
 }
 
-.bg{
+.fullLengthInPage{
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.fullLengthInPage >div{
+	border:3px solid red;
 }
