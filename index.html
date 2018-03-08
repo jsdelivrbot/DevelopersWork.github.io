@@ -2,21 +2,13 @@
 	<head>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-		
-		<meta name="theme-color" content="#2E3842">
-		
-		<meta name="description" content="This is Developers@Work Official Website. I'm  a Developer , Gamer to know about me just take a look into this link">
-		
-		<meta name="keywords" content="Developers@Work,DevelopersWork,DevelopersWorkY,DevelopersWork.github.io,Official Website,Youtuber,Twitch Streamer,Developer,Android,Gamer,Tech">	
-		
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8">		
+		<meta name="theme-color" content="#2E3842">		
+		<meta name="description" content="This is Developers@Work Official Website. I'm  a Developer , Gamer to know about me just take a look into this link">		
+		<meta name="keywords" content="Developers@Work,DevelopersWork,DevelopersWorkY,Developers@Work Page,DevelopersWork.github.io,Official Website,Youtuber,Twitch Streamer,Developer,Android GEEk,Gamer,Tech">	
 		<meta name="google-site-verification" content="qaJGD11lXBFx-G_iNkaZche1a2sMGvJIRPWA6nbl4iE" />
 		
-        <meta name="description" content="Developers@Work Page">
-		
-		<link rel="icon" href="https://goo.gl/47oCKc" type="image/png" />
-		
+		<link rel="icon" href="https://goo.gl/47oCKc" type="image/png" />		
 		<title id="title">Home - Developers@Work</title>
 		
 		<!-- jQuery library -->
@@ -30,10 +22,7 @@
 		<!-- BootStrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		
-		<!-- SocialMedia Icons -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		
+	
 		<!--  Source Files GitHub -->
 		<script type="text/javascript" src="https://rawgit.com/DevelopersWork/Website-Modules/Javascript-Jquery/SearchandSubscriberCountofChannel/SearchandSubscriberCountofChannelScript.js"></script>
 		
@@ -48,11 +37,11 @@
 		<script type="text/javascript" async src="globalIncludes/javascript/animation.js"></script>
 		<script type="text/javascript" src="globalIncludes/javascript/localhost.js"></script>
 		<script type="text/javascript" async src="globalIncludes/javascript/googleAnalytics.js"></script>
-		<script type="text/javascript" async src="globalIncludes/javascript/loadDefaults.js"></script>
+		<!--<script type="text/javascript" async src="globalIncludes/javascript/loadDefaults.js"></script>>
 		
 		<!-- Local Includes -->
 		<script type="text/javascript" src="../Modules/autho.js"></script>
-		<script type="text/javascript" src="script.js"></script>
+		<script async type="text/javascript" src="script.js"></script>
 		<link rel="stylesheet" href="style.css">
 		
 	</head>
@@ -65,14 +54,18 @@
 		
 		<div id="pageBody"  style="display:none;">
 		
-			<section id="navigationBar"></section><br><br><br>
+			<div id="navigationBar">
+				<script>
+					$("#navigationBar").load("https://raw.githubusercontent.com/DevelopersWork/Website-Modules/Pre-Builts/NavBar/index.html");
+				</script>
+			</div><br><br><br>
 			
 			<section  class="fullLengthInPage" style="text-align:center;">
-				<div class="col-md-2 col-sm-2">d</div>
-				<div class="col-md-7 col-sm-7" style="text-align:center;">
+				<div class="col-md-2 col-sm-8">d</div>
+				<div class="col-md-8 col-sm-20" style="text-align:center;">
 					<div id="RealTimeSubscribersCount" style="list-style:none;display:inline-block;"align="center"></div>
 				</div>
-				<div class="col-md-3 col-sm-3">d</div>
+				<div class="col-md-2 col-sm-8">d</div>
 			</section>
 			
 			<section class="container fullLengthInPage">
