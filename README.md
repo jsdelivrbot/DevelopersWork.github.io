@@ -12,7 +12,7 @@ Join as Creator : http://gestyy.com/qSHAck
 # Join my discord Server : https://discord.gg/zeaBtqK
 Roblox Group : https://www.roblox.com/My/Groups.aspx?gid=4079891
 
-Finally it's time to smash◕‿◕ that Like Button✔
+It's time to smash◕‿◕ that Like Button✔  
 Also Subscribe☂ if you Haven't and Support✖‿✖ us to make more videos▼
 # ► http://bit.ly/SubtoDW *Subscribe* ◄
 You can Follow ME▼
